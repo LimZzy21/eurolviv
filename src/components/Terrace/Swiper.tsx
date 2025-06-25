@@ -59,6 +59,7 @@ export const SwiperSlider = ({
                 src={slide}
                 alt={slide}
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
           </SwiperSlide>

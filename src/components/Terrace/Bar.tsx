@@ -56,6 +56,7 @@ export const BarComponent = () => {
               src={barImg}
               alt="bar"
               className="2xl:w-[46.99vw] 2xl:h-[42.24vw]  xl:w-[883px] xl:h-[46.09vw] lg:h-[495px] w-full h-[289px] object-cover"
+              loading="eager"
             />
           </InViewWrapper>
           <h2 className="text-center text-[16px]  block underline underline-2 xl:py-[20px_27px] 2xl:py-[1.30vw_1.61vw] py-[17px_18px] uppercase text-[#8C331B] 2xl:text-[1.25vw]  xl:text-[1.72vw]  leading-[108%] tracking-[-0.05em] font-cofo-medium">
@@ -73,6 +74,7 @@ export const BarComponent = () => {
                   src={cocktailImg}
                   alt="cocktail"
                   className=" md:w-[378px]  xl:h-[19.38vw] 2xl:w-[19.72vw]  2xl:h-[18.13vw] lg:h-[20.53vw] object-cover  "
+                  loading="eager"
                 />
               </InViewWrapper>
             </div>
@@ -82,6 +84,7 @@ export const BarComponent = () => {
                   src={cocktailImgScnd}
                   alt="cocktail"
                   className=" md:w-[378px] xl:h-[19.38vw] 2xl:w-[19.72vw]  2xl:h-[18.13vw] lg:h-[20.73vw] object-cover  "
+                  loading="eager"
                 />
               </InViewWrapper>
             </div>
@@ -99,6 +102,7 @@ export const BarComponent = () => {
                   src={wineImg}
                   alt="cocktail"
                   className=" md:w-[378px]  xl:h-[19.58vw] 2xl:w-[19.72vw] lg:h-[20.73vw] 2xl:h-[18.13vw] object-cover  "
+                  loading="eager"
                 />
               </InViewWrapper>
             </div>
@@ -108,7 +112,8 @@ export const BarComponent = () => {
                   src={wineImgScnd}
                   alt="cocktail"
                   className=" md:w-[378px] xl:h-[19.58vw] 2xl:h-[18.13vw] 2xl:w-[19.72vw] object-cover  lg:h-[20.53vw]"
-                />
+                  loading="eager"
+                  />
               </InViewWrapper>
             </div>
           </div>

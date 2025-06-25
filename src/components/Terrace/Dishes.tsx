@@ -13,7 +13,7 @@ export const Dishes = ({
 }: {
   slides: string[];
   sliderId?: string;
-  content: {
+  content: {  
     title: string;
     titleTwo?: string;
     desc: string;

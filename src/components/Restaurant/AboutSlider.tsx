@@ -124,6 +124,7 @@ function AboutSlider({ slides }: AboutSliderProps) {
                           ? "xl:w-[65vw] xl:h-[37vw]"
                           : "xl:w-[65vw] xl:h-[35vw]"
                       }`}
+                    loading="eager"
                   />
                 </InViewWrapper>
                 <div

@@ -20,6 +20,7 @@ export const TerraseCard = ({ index, el }: TerraseCardToProps) => {
       <img
         src={el}
         alt=""
+        loading="eager"
         className="w-full h-full object-cover lg:h-[40vw] xl:h-full"
       />
     </div>
