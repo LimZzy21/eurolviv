@@ -92,3 +92,10 @@ body{
 .animate-slideIn {
   animation: slideIn 0.3s ease-out forwards;
 }
+
+
+.video-js, .video-js video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}

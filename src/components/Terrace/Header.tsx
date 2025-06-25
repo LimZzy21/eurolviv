@@ -1,25 +1,21 @@
 import { useTranslation } from "react-i18next";
 import { HeaderButtons } from "@/components/Buttons/Ruff/HeaderButtons";
-import terraceHeader from "@/assets/Terrase/header.mp4";
+import { VideoPlayer } from "../common/VideoPlayer/VideoPlayer";
+import { useInView } from "react-intersection-observer";
 
 export const TerraseHeader = () => {
   const { t } = useTranslation();
+  const { ref } = useInView({ triggerOnce: true, rootMargin: '100px' });
   return (
     <div className="relative w-full lg:h-[1157px] h-[808px] flex items-center justify-center flex-col">
       <div className="absolute inset-0 bg-gradient-to-b from-[#252526] via-transparent to-[#25252600] z-[-9]"></div>
       <div className="absolute inset-0 bg-[#25252659] z-[-9]"></div>
+      <div ref={ref} className="absolute inset-0 w-full  z-[-10]">
+       <VideoPlayer src="/terrace/header.m3u8" />
+      </div>
+    
 
-      <video
-        src={terraceHeader}
-        className="lg:h-[1157px] absolute inset-0 w-full h-full object-cover object-[20%_40%] z-[-10]"
-        autoPlay
-        muted
-        loop
-        controls={false}
-        playsInline
-      />
-
-      <h4 className="font-cofo-medium text-[#FFFFFF] leading-[22.68px]  underline text-sm decoration-transparent items-center xl:mb-4 lg:mb-4">
+      <h4 className="font-cofo-medium text-[#ffffffc0] leading-[22.68px]  underline text-sm decoration-transparent items-center xl:mb-4 lg:mb-4">
         <span className="font-blessed  block text-center text-[14px] xl:text-3xl ml-2 xl:inline">
           {t("terrase.header.title")}
         </span>

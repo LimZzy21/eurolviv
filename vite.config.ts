@@ -23,6 +23,6 @@ export default defineConfig({
     }
   },
   optimizeDeps: {
-    include: ["react-slick"],
+    include: ["react-slick", 'video.js'],
   },
 })
